@@ -33,25 +33,6 @@ const demoRoutes: AdminRouterItem[] = [
         key: "/demo/table",
         icon: <DesktopOutlined />,
       }
-    }, {
-      path: 'nested',
-      element: <Outlet />,
-      meta: {
-        label: "nested",
-        title: "nested",
-        key: "/demo/nested",
-        icon: <DesktopOutlined />,
-      },
-      children: [{
-        path: 'table',
-        element: <DemoTable />,
-        meta: {
-          label: "table",
-          title: "table",
-          key: "/demo/nested/table",
-          icon: <DesktopOutlined />,
-        }
-      }]
     }]
   },
 ]
